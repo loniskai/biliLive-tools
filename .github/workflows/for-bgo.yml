@@ -56,6 +56,9 @@ jobs:
     steps:
       - name: Check out Git repository
         uses: actions/checkout@v4
+        with:
+          repository: kira1928/biliLive-tools
+          ref: fix/douyin-balance-cooldown
 
       - name: Setup Node + pnpm (composite)
         uses: ./.github/actions/cli-setup
